@@ -109,10 +109,11 @@ Identified relationships between different features (e.g. pixel intensity values
 
 * **CNN Model**: A basic convolutional neural network (CNN) architecture consisting of convolutional, pooling, and dense layers.
 * **ResNet Model**: A pre-trained ResNet50 model used as the backbone, followed by global average pooling and dense layers for classification.
+* **DenseNet Model**: A  pretrained model that was the best performing of the three though exhibitted instances of overfitting.
 
 ### Model Training
 
-Both models were trained using a combination of training and validation datasets. We used optimization algorithms to minimize the loss function and update model parameters. Hyperparameters such as learning rate, batch size, and number of epochs were tuned for optimal performance.
+All the models were trained using a combination of training and validation datasets. We used optimization algorithms to minimize the loss function and update model parameters. Hyperparameters such as learning rate, batch size, and number of epochs were tuned for optimal performance. We 
 
 **Model Evaluation**
 ------------------
@@ -132,7 +133,7 @@ These metrics provide insights into the model's ability to correctly classify ma
 
 ## CNN Model
 
-The CNN model achieved reasonable accuracy, but exhibited signs of overfitting, as evidenced by the gap between training and validation accuracy.
+The CNN model achieved reasonable accuracy,  as evidenced by the gap between training and validation accuracy.
 
 ![image](https://github.com/user-attachments/assets/da60e6ac-853c-4876-ab1b-f5d03b7b32cd) 
 
@@ -192,7 +193,7 @@ The ResNet model outperformed the CNN model in classifying breast cancer images,
 -------------
 
 * Expand the dataset to include a larger and more diverse set of images.
-* Develop a user-friendly interface for healthcare professionals to interact with the model.
+* Improve on the app to be more interactive for both healthcare professionals and non-healthcare  to interact with the model.
 * Conduct a pilot study in a clinical setting to assess the model's impact on patient outcomes.
 * Model refinement
   
